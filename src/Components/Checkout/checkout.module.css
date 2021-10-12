@@ -1,0 +1,125 @@
+.checkout {
+  position: relative;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 50px;
+  justify-content: center;
+  overflow-x: hidden;
+  gap: 10px;
+  box-shadow: 1px 1px 30px rgba(88, 88, 88, 0.404);
+  background-color: #fff;
+  padding: 15px;
+  width: 97%;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+.offer .right,
+.offer .left {
+  padding: 15px;
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.offer .left {
+  flex: 1 0 400px;
+  width: 50%;
+  align-self: start;
+}
+
+.offer .left h3,
+.famous h3 {
+  font-family: "Righteous", cursive;
+  font-size: 30px;
+  margin-bottom: 5px;
+  padding-left: 12px;
+  border-left: 6px solid #0d639c;
+}
+
+.offer .left a button {
+  padding: 15px 10px;
+  min-width: 130px;
+  font-size: 15px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  box-shadow: 1px 1px 10px rgba(75, 75, 75, 0.87);
+  border: 2px solid rgba(148, 148, 148, 0.178);
+  border-radius: 5px;
+  background-color: #0d639c;
+  color: #fff;
+  z-index: 1000;
+  margin-top: 15px;
+  border: 1px solid #0d639c;
+}
+
+.offer .left a button:hover {
+  transition: all 0.5s ease;
+  background: #fff;
+  color: #0d639c;
+}
+
+.offer .left span {
+  display: block;
+}
+
+.offer .left span:nth-of-type(1) {
+  color: rgb(88, 88, 88);
+  font-weight: 600;
+}
+
+.offer .left span:nth-of-type(1) i {
+  color: #0d639c;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.offer .left span:nth-of-type(2) {
+  color: #4cd137;
+  font-weight: 600;
+}
+
+.offer .left p {
+  color: rgb(88, 88, 88);
+  margin-bottom: 10px;
+}
+
+.offer .left .rating {
+  background-color: #ddd;
+  width: fit-content;
+}
+
+.offer .right {
+  flex: 1 0 400px;
+}
+
+.offer .right img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px rgba(17, 17, 17, 0.753);
+}
+
+@media screen and (max-width: 420px) {
+  .offer .right {
+    flex: 1 0 350px;
+  }
+
+  .offer .left {
+    flex: 1 0 350px;
+  }
+
+  .join h2 {
+    font-size: 40px;
+  }
+}

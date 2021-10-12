@@ -1,0 +1,162 @@
+.view {
+  position: relative;
+}
+
+.view .img {
+  position: relative;
+  display: flex;
+  background: url(../../Photos/view.jpg) no-repeat fixed center;
+  background-size: cover;
+  height: 95vh;
+  width: 100%;
+}
+
+.view .img .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 45%;
+  height: 100%;
+  padding: 10px;
+  backdrop-filter: blur(3px) saturate(80%);
+  -webkit-backdrop-filter: blur(3px) saturate(80%);
+  background-color: rgba(0, 0, 0, 0.158);
+}
+
+.view .img h2 {
+  font-family: "Righteous", cursive;
+  font-size: 60px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.view .container {
+  position: relative;
+  margin-top: 80px;
+  padding: 20px;
+}
+
+.view .container .header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+
+.view .container .header .left {
+  min-width: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+}
+
+.view .container .header .left i {
+  background-color: #0d639c;
+  padding: 8px 11px;
+  border: 1px solid #0d639c;
+  color: #fff;
+  transition: all 0.4s linear;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 1px 1px 15px rgba(17, 17, 17, 0.219);
+}
+
+.view .container .header .left i:nth-of-type(1) {
+  background: none;
+  color: #0d639c;
+}
+
+.view .container .header .left i:nth-of-type(1):hover {
+  background-color: #0d639c;
+  color: #fff;
+  transition: all 0.4s linear;
+}
+
+.view .container .header .right {
+  position: relative;
+  width: 40%;
+}
+
+.view .container .header .right input {
+  padding: 8px;
+  padding-left: 12px;
+  width: 100%;
+  outline: none;
+  transition: 0.4s;
+  border: 1px solid #ddd;
+  box-shadow: 1px 1px 10px rgba(136, 136, 136, 0.219);
+}
+
+.view .container .header .right input:focus {
+  border: 1px solid #0d639c;
+  transition: 0.4s;
+}
+
+.view .container .cards {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 25px;
+}
+
+.view .img .text p {
+  color: rgb(219, 219, 219);
+  margin-top: 12px;
+}
+
+.view .slider {
+  position: relative;
+  padding: 25px;
+  margin: 0 auto;
+  margin-top: 50px;
+  box-shadow: 1px 1px 30px rgba(88, 88, 88, 0.404);
+  width: 97%;
+  background-color: #fff;
+}
+
+.view .slider h3 {
+  font-family: "Righteous", cursive;
+  font-size: 30px;
+  margin-bottom: 45px;
+  padding-left: 12px;
+  border-left: 6px solid #0d639c;
+}
+
+@media screen and (max-width: 950px) {
+}
+
+@media screen and (max-width: 750px) {
+}
+
+@media screen and (max-width: 760px) {
+  .view .img .text h2 {
+    font-size: 50px;
+  }
+
+  .view .img .text {
+    width: 50%;
+  }
+
+  .view .img .text h2 {
+    font-size: 50px;
+  }
+
+  .view .img {
+    background-attachment: local;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .view .img .text h2 {
+    font-size: 40px;
+  }
+}

@@ -1,0 +1,267 @@
+.home {
+  position: relative;
+  width: 100%;
+}
+
+.home .img img {
+  width: 100%;
+}
+
+.home .img {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.home .imgs {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  padding: 10px;
+  transform: translate(50%, -50%);
+  gap: 13px;
+  top: 50%;
+  right: 30px;
+}
+
+.home .imgs img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.1s linear;
+}
+
+.active {
+  transform: scale(0.95);
+  transition: scale 0.1s linear;
+  border: 3px solid #0d639c;
+}
+
+.home .details {
+  position: absolute;
+  padding: 20px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  bottom: 7px;
+  backdrop-filter: blur(5px) saturate(100%);
+  -webkit-backdrop-filter: blur(5px) saturate(100%);
+  background-color: rgba(0, 0, 0, 0.329);
+  color: #fff;
+  width: 50%;
+}
+
+.home .details h2 {
+  font-family: "Righteous", cursive;
+  font-weight: 500;
+  font-size: 60px;
+}
+
+.home .details h3 {
+  font-weight: 500;
+}
+
+.home .details p {
+  margin-top: 12px;
+}
+
+.home .cards {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 12px;
+  padding: 15px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.offer {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 50px;
+  justify-content: center;
+  overflow-x: hidden;
+  gap: 10px;
+}
+
+.offer .right,
+.offer .left {
+  padding: 15px;
+  position: relative;
+}
+
+.offer .left {
+  flex: 1 0 400px;
+}
+
+.offer .left h3,
+.famous h3 {
+  font-family: "Righteous", cursive;
+  font-size: 30px;
+  margin-bottom: 15px;
+  padding-left: 12px;
+  border-left: 6px solid #0d639c;
+}
+
+.offer .left a button {
+  padding: 15px 25px;
+  min-width: 160px;
+  font-size: 17px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  box-shadow: 1px 1px 15px rgb(75, 75, 75);
+  border: 2px solid rgba(148, 148, 148, 0.178);
+  border-radius: 5px;
+  background-color: #0d639c;
+  color: #fff;
+  z-index: 1000;
+  margin-top: 15px;
+  border: 1px solid #0d639c;
+}
+
+.offer .left a button:hover {
+  transition: all 0.5s ease;
+  background: #fff;
+  color: #0d639c;
+}
+
+.offer .right {
+  flex: 1 0 400px;
+}
+
+.offer .right img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 1px 1px 15px rgba(17, 17, 17, 0.753);
+}
+
+.join {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 20px 15px;
+  justify-content: center;
+  background: url("https://free4kwallpapers.com/uploads/originals/2017/11/05/empire-state-building-new-york-city--wallpaper.jpg")
+    center no-repeat fixed;
+  min-height: 70vh;
+  margin-bottom: 50px;
+}
+
+.join h2,
+.join p,
+.join a {
+  color: #fff;
+  z-index: 10;
+  display: block;
+  margin: 5px;
+}
+
+.join h2 {
+  font-family: "Righteous", cursive;
+  font-size: 60px;
+  font-weight: 500;
+  border-left: 6px solid #0d639c;
+  padding-left: 12px;
+}
+
+.join p {
+  width: 60%;
+}
+
+.join a button {
+  padding: 15px 25px;
+  min-width: 160px;
+  font-size: 17px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  box-shadow: 1px 1px 15px rgb(36, 36, 36);
+  border: 2px solid rgba(148, 148, 148, 0.178);
+  border-radius: 5px;
+  background-color: #0d639c;
+  color: #fff;
+  z-index: 1000;
+}
+
+.join a button:hover {
+  transition: all 0.5s ease;
+  backdrop-filter: blur(5px) saturate(100%);
+  -webkit-backdrop-filter: blur(5px) saturate(100%);
+  background: transparent;
+}
+
+.join::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 17, 17, 0.664);
+}
+
+.famous {
+  position: relative;
+  padding: 15px;
+}
+
+.famous h3 {
+  margin-left: 30px;
+}
+
+.houseCards {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding: 20px;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 950px) {
+  .home .details h2 {
+    font-size: 45px;
+  }
+
+  .home .details p {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .home .details {
+    display: none;
+  }
+
+  .join p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .home .details h2 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .offer .right {
+    flex: 1 0 350px;
+  }
+
+  .offer .left {
+    flex: 1 0 350px;
+  }
+
+  .join h2 {
+    font-size: 40px;
+  }
+}

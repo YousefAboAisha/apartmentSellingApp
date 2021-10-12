@@ -1,0 +1,41 @@
+.nav {
+  position: fixed;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  top: 82px;
+  right: 0;
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 2px 15px rgba(172, 172, 172, 0.493);
+  transition: all 0.7s linear;
+  display: none;
+  z-index: 1000;
+}
+
+.nav a {
+  display: block;
+  text-align: center;
+  display: inline-block;
+  min-width: 180px;
+  padding: 25px 0;
+  font-weight: 600;
+  margin-bottom: 1px;
+}
+
+.nav a:hover {
+  color: #0d639c;
+}
+
+.active {
+  color: #0d639c;
+}
+
+@media screen and (max-width: 750px) {
+  .nav {
+    display: flex;
+  }
+}

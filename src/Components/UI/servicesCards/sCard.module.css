@@ -1,0 +1,37 @@
+.card {
+  position: relative;
+  flex: 0 0 300px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  text-align: justify;
+  padding: 15px 10px;
+  box-shadow: 1px 1px 15px rgba(34, 34, 34, 0.588);
+  border-radius: 5px;
+  background: #fff;
+  border-bottom: 4px solid #2980b9;
+  transition: all 0.4s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: all 0.4s ease-in-out;
+}
+
+.card i {
+  font-size: 50px;
+  color: #2980b9;
+}
+
+.card i:nth-of-type(2) {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  font-size: 200px;
+  opacity: 0.09;
+}
+
+.card h3 {
+  margin-top: 5px;
+}
