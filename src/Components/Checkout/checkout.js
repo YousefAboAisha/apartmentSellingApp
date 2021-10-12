@@ -12,6 +12,7 @@ const Checkout = () => {
       price: "15,000",
       type: "detailedCard",
       id: 1,
+      rate: 3.5,
     },
     {
       src: "https://cdn.pixabay.com/photo/2016/11/29/03/53/house-1867187__340.jpg",
@@ -20,6 +21,7 @@ const Checkout = () => {
       price: "70,000",
       type: "detailedCard",
       id: 2,
+      rate: 3,
     },
     {
       src: "https://cdn.pixabay.com/photo/2017/06/13/22/42/kitchen-2400367__340.jpg",
@@ -28,6 +30,7 @@ const Checkout = () => {
       price: "42,000",
       type: "detailedCard",
       id: 3,
+      rate: 4.5,
     },
     {
       src: "https://cdn.pixabay.com/photo/2016/02/19/10/16/villa-1209148__340.jpg",
@@ -36,6 +39,7 @@ const Checkout = () => {
       price: "25,000",
       type: "detailedCard",
       id: 4,
+      rate: 4,
     },
     {
       src: "https://cdn.pixabay.com/photo/2017/04/10/22/28/residence-2219972__340.jpg",
@@ -44,6 +48,7 @@ const Checkout = () => {
       price: "10,000",
       type: "detailedCard",
       id: 5,
+      rate: 4,
     },
     {
       src: "https://cdn.pixabay.com/photo/2015/03/26/09/41/condominium-690086__340.jpg",
@@ -52,6 +57,7 @@ const Checkout = () => {
       price: "22,000",
       type: "detailedCard",
       id: 6,
+      rate: 4.5,
     },
     {
       src: "https://cdn.pixabay.com/photo/2017/06/16/15/58/luxury-home-2409518__340.jpg",
@@ -60,6 +66,7 @@ const Checkout = () => {
       price: "35,000",
       type: "detailedCard",
       id: 7,
+      rate: 3.5,
     },
     {
       src: "https://cdn.pixabay.com/photo/2017/07/03/21/35/house-2469067__340.jpg",
@@ -68,16 +75,13 @@ const Checkout = () => {
       price: "70,000",
       type: "detailedCard",
       id: 8,
+      rate: 4,
     },
   ];
+
   const { id } = useContext(GlobalState);
 
-  //   const [houseId, setHouseId] = useState(null);
   const house = housese[id - 1];
-
-  //   useEffect(() => {
-  //     setHouseId(house);
-  //   }, [id, house]);
 
   console.log("Checkout ID", id);
   console.log("Checkout ID", house);
@@ -99,7 +103,9 @@ const Checkout = () => {
               company first.
             </p>
             <span> {house.price} $ </span>
-            <div className={classes.rating}></div>
+            <div className={classes.rating}>
+              <Stars rate={house.rate} />
+            </div>
             <a href="#" target="_blank">
               <button>Add To Cart</button>
             </a>

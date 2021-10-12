@@ -89,9 +89,15 @@
   font-size: 14px;
 }
 
+.card .text .rate span {
+  color: #f39c12;
+  display: inline;
+  font-size: 19px;
+}
+
 .card .text p {
   font-size: 13px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .card .text span i {

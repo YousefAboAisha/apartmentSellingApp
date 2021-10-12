@@ -3,6 +3,7 @@ import classes from "./houseCard.module.css";
 import { GlobalState } from "../../../Context/globalState";
 import PopUpImg from "../popUpImg/popUpImg";
 import { useHistory } from "react-router";
+import Stars from "../Stars/stars";
 
 const HouseCard = ({ house, type }) => {
   const [modal, setModal] = useState(false);
@@ -60,6 +61,7 @@ const HouseCard = ({ house, type }) => {
           </button>
         )}
       </div>
+
       <div className={classes.text}>
         <h4>{house.name} </h4>
         <span>
@@ -70,6 +72,9 @@ const HouseCard = ({ house, type }) => {
           Every person is looking to build a life on their own needs an
           apartment to live on their own terms.
         </p>
+        <div className={classes.rate}>
+          <Stars rate={house.rate} />
+        </div>
         <div>
           <span className={classes.price}>{house.price} $</span>
           <button onClick={() => checkoutHandler(house.id)}>Buy Now</button>
