@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { GlobalState } from "../../Context/globalState";
 import classes from "./checkout.module.css";
 import Stars from "../UI/Stars/stars";
+import AlertDialogSlide from "../UI/paymentDetails/paymentDetails";
 
 const Checkout = () => {
   const housese = [
@@ -80,11 +81,10 @@ const Checkout = () => {
   ];
 
   const { id } = useContext(GlobalState);
-
   const house = housese[id - 1];
 
-  console.log("Checkout ID", id);
-  console.log("Checkout ID", house);
+  // console.log("Checkout ID", id);
+  // console.log("Checkout ID", house);
 
   return (
     <div className={classes.checkout}>
@@ -106,9 +106,7 @@ const Checkout = () => {
             <div className={classes.rating}>
               <Stars rate={house.rate} />
             </div>
-            <a href="#" target="_blank">
-              <button>Add To Cart</button>
-            </a>
+            <AlertDialogSlide />
           </div>
           <div className={classes.right}>
             <img src={house.src} alt="House" />

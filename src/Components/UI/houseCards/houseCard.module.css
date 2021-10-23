@@ -124,7 +124,8 @@
   outline: none;
   cursor: pointer;
   transition: all 0.5s ease;
-  box-shadow: 1px 1px 5px rgb(75, 75, 75);
+  box-shadow: inset 1px 1px 25px rgba(4, 26, 66, 0.671),
+    1px 1px 5px rgba(75, 75, 75, 0.87);
   border: 2px solid rgba(148, 148, 148, 0.178);
   background-color: #0d639c;
   color: #fff;
@@ -135,4 +136,5 @@
   background: none;
   color: #0d639c;
   transition: all 0.5s ease;
+  box-shadow: 1px 1px 5px rgba(75, 75, 75, 0.87);
 }

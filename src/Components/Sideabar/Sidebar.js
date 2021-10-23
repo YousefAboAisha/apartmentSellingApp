@@ -3,6 +3,7 @@ import classes from "./Sidebar.module.css";
 import { NavLink } from "react-router-dom";
 
 const SideBar = ({ toggle }) => {
+  const token = true;
   return (
     <div
       className={classes.nav}
@@ -19,6 +20,12 @@ const SideBar = ({ toggle }) => {
       </NavLink>
       <NavLink to="/profile" activeClassName={classes.active}>
         Profile
+      </NavLink>
+      <NavLink exact to="/dashboard" activeClassName={classes.active}>
+        Dashboard
+      </NavLink>
+      <NavLink exact to="/login" activeClassName={classes.active}>
+        Login
       </NavLink>
     </div>
   );

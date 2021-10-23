@@ -101,18 +101,11 @@ const View = () => {
           </div>
 
           <div className={classes.right}>
-            <input
-              list="sorting"
-              name="sorting"
-              id="browser"
-              placeholder="Sort By"
-            />
-
-            <datalist id="sorting">
+            <select>
               <option value="Name">Name</option>
               <option value="Price">Price</option>
               <option value="Area">Area</option>
-            </datalist>
+            </select>
           </div>
         </div>
 

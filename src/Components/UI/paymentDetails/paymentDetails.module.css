@@ -1,0 +1,81 @@
+.box {
+  position: relative;
+}
+
+.title {
+  background-color: #0d639c;
+  color: #fff;
+  box-shadow: inset 1px 1px 25px rgba(4, 26, 66, 0.671);
+}
+
+.input {
+  display: flex;
+  position: relative;
+  flex-flow: column wrap;
+  margin: 10px 0;
+}
+
+.input > span {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.input .expireDate {
+  display: flex;
+  align-items: center;
+}
+
+.input .expireDate span {
+  margin-right: 5px;
+}
+
+.input .expireDate select {
+  margin-right: 15px;
+}
+
+.input input,
+.input select {
+  padding: 7px;
+  padding-left: 10px;
+  border: 1px solid rgb(192, 192, 192);
+  outline: none;
+  transition: 0.5s;
+}
+
+.input input:focus,
+.input select:focus {
+  border: 1px solid #0d639c;
+  transition: 0.5s;
+}
+
+.btns {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.btns button,
+.btns input {
+  padding: 8px 6px;
+  min-width: 80px;
+  font-size: 13px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.btns input {
+  box-shadow: inset 1px 1px 25px rgba(4, 26, 66, 0.671),
+    1px 1px 5px rgba(75, 75, 75, 0.411);
+  background-color: #0d639c;
+  color: #fff;
+  border: 1px solid #0d639c;
+}
+
+.btns button {
+  background: none;
+  font-weight: 600;
+  margin-right: 10px;
+}

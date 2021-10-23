@@ -1,15 +1,13 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import classes from "./Navbar.module.css";
 import { NavLink } from "react-router-dom";
 import SideBar from "../Sideabar/Sidebar";
 
 const NavBar = (props) => {
   const [toggle, setToggle] = useState(false);
-  const toggler = useRef(null);
 
   const clickHandler = () => {
     setToggle(!toggle);
-    toggler.current.click();
   };
 
   return (
@@ -30,8 +28,14 @@ const NavBar = (props) => {
           <NavLink exact to="/profile" activeClassName={classes.active}>
             Profile
           </NavLink>
+          <NavLink exact to="/dashboard" activeClassName={classes.active}>
+            Dashboard
+          </NavLink>
+          <NavLink exact to="/login" activeClassName={classes.active}>
+            Login
+          </NavLink>
         </div>
-        <div ref={toggler} className={classes.toggle} onClick={clickHandler}>
+        <div className={classes.toggle} onClick={clickHandler}>
           <i className="fas fa-bars"></i>
         </div>
       </nav>

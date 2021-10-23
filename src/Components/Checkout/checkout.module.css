@@ -9,17 +9,16 @@
 .offer {
   position: relative;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row wrap-reverse;
   margin-bottom: 50px;
   justify-content: center;
   overflow-x: hidden;
   gap: 10px;
   box-shadow: 1px 1px 30px rgba(88, 88, 88, 0.404);
   background-color: #fff;
-  padding: 15px;
+  padding: 35px 15px;
   width: 97%;
   border-radius: 5px;
-  margin-top: 50px;
 }
 
 .offer .right,
@@ -46,14 +45,15 @@
   border-left: 6px solid #0d639c;
 }
 
-.offer .left a button {
+.offer .left button {
   padding: 12px 10px;
   min-width: 120px;
   font-size: 15px;
   outline: none;
   cursor: pointer;
   transition: all 0.5s ease;
-  box-shadow: 1px 1px 10px rgba(75, 75, 75, 0.87);
+  box-shadow: inset 1px 1px 25px rgba(4, 26, 66, 0.671),
+    1px 1px 5px rgba(75, 75, 75, 0.87);
   border: 2px solid rgba(148, 148, 148, 0.178);
   border-radius: 5px;
   background-color: #0d639c;
@@ -63,10 +63,11 @@
   border: 1px solid #0d639c;
 }
 
-.offer .left a button:hover {
+.offer .left button:hover {
   transition: all 0.5s ease;
-  background: #fff;
+  background: none;
   color: #0d639c;
+  box-shadow: 1px 1px 5px rgba(75, 75, 75, 0.87);
 }
 
 .offer .left span {
@@ -111,6 +112,10 @@
 }
 
 @media screen and (max-width: 420px) {
+  .offer {
+    margin-top: 50px;
+  }
+
   .offer .right {
     flex: 1 0 350px;
   }

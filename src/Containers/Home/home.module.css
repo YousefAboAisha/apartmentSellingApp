@@ -115,7 +115,8 @@
   outline: none;
   cursor: pointer;
   transition: all 0.5s ease;
-  box-shadow: 1px 1px 15px rgb(75, 75, 75);
+  box-shadow: inset 1px 1px 25px rgba(4, 26, 66, 0.671),
+    1px 1px 5px rgba(75, 75, 75, 0.87);
   border: 2px solid rgba(148, 148, 148, 0.178);
   border-radius: 5px;
   background-color: #0d639c;
@@ -127,8 +128,9 @@
 
 .offer .left a button:hover {
   transition: all 0.5s ease;
-  background: #fff;
   color: #0d639c;
+  box-shadow: 1px 1px 5px rgba(75, 75, 75, 0.87);
+  background: none;
 }
 
 .offer .right {
@@ -182,8 +184,8 @@
   outline: none;
   cursor: pointer;
   transition: all 0.5s ease;
-  box-shadow: 1px 1px 15px rgb(36, 36, 36);
-  border: 2px solid rgba(148, 148, 148, 0.178);
+  box-shadow: inset 3px 3px 25px rgba(4, 26, 66, 0.918), 1px 1px 10px #222;
+  border: 2px solid #004777;
   border-radius: 5px;
   background-color: #0d639c;
   color: #fff;
@@ -192,9 +194,8 @@
 
 .join a button:hover {
   transition: all 0.5s ease;
-  backdrop-filter: blur(5px) saturate(100%);
-  -webkit-backdrop-filter: blur(5px) saturate(100%);
   background: transparent;
+  border: 2px solid #0d639c;
 }
 
 .join::before {
