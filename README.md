@@ -2,7 +2,7 @@
 
 Website for selling and buying housese, and exploring famous buildings.
 
-Using HTML, CSS, JS, RACT JS, FIREBASE, EMAIL-JS, MUI.
+Using: HTML, CSS, JS, React JS, Firebase, Email-JS, MUI.
 
 # Getting Started with Create React App
 
