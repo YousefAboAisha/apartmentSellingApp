@@ -1,3 +1,9 @@
+# Project description
+
+Website for selling and buying housese, and exploring famous buildings.
+
+Using HTML, CSS, JS, RACT JS, FIREBASE, EMAIL-JS, MUI.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
